@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRIT Page</title>
+    
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-12 d-flex align-items-center">
+                        <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
+                            <i class="bi-box"></i>
+                            <span>Guardian Resilience & Intensity Training (GRIT)</span>
+                        </a>
+                        <nav class="nav nav-tabs">
+                            <a class="nav-link" href="Day1.html">Day 1</a>
+                            <a class="nav-link" href="Day2.html">Day 2</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 col-12 mx-auto text-center">
+                        <small>Stellar leads are forged in GRIT.</small>
+                        <h1 class="text-white mt-2 mb-4 pb-2">It gets gritty in T-minus</h1>
+                        <ul class="countdown d-flex flex-wrap align-items-center">
+                            <li class="countdown-item"><h2 class="days gold-text">14</h2><span>Days</span></li>
+                            <li class="countdown-item"><h2 class="hours gold-text">10</h2><span>Hours</span></li>
+                            <li class="countdown-item"><h2 class="minutes gold-text">15</h2><span>Minutes</span></li>
+                            <li class="countdown-item"><h2 class="seconds gold-text">34</h2><span>Seconds</span></li>
+                        </ul>
+
+                        <div class="buttons-container mt-12 justify-content-between align-items-center">
+                            <a href="https://docs.google.com/document/d/1m3cnNqmh0PZnbdhX5Ch5Zbjc2EKAI3F8z4uMo0_hKxA/edit?usp=sharing" class="btn btn-outline-light mx-3">Packing List</a>
+                            <a href="https://docs.google.com/document/d/13FMg8Pu9rwm84REe5G-EY8zOqWLs5RH_iIvCX0jWu-I/edit?usp=sharing" class="btn btn-outline-light mx-3">Crews</a>
+                            <a href="https://docs.google.com/presentation/d/1f3attiRQMqHatzSDpX25T0ptq5EZKv5FriBMDOr-DE0/edit?usp=sharing" class="btn btn-outline-light mx-3">Timeline</a>
+                            <a href="https://drive.google.com/drive/folders/1jkEIzz41JBa2LquRHyEqVAUmC9veNCPo?usp=sharing" class="btn btn-outline-light mx-3">Risk Management</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-wrap">
+                <video autoplay loop muted class="custom-video">
+                    <source src="videos/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+    
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/init.js"></script>
+    
+    <style>
+        .nav-tabs .nav-link {
+            color: #fff;
+            background: transparent;
+            border: none;
+        }
+        .buttons-container .btn {
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+        .buttons-container .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .gold-text {
+            color: gold;
+        }
+    .countdown {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    text-align: center; /* Centers text */
+    background-color: rgba(0, 1, 4, 0.366);
+    gap: 15px; /* Adjust spacing between countdown elements */
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers numbers & labels */
+    justify-content: center;
+    min-width: 80px; /* Ensures consistent spacing */
+}
+small {
+    color: gold !important; /* Ensures the text is white */
+}
+    </style>
+</body>
+</html>

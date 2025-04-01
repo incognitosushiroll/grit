@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>GRIT Page</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-12 col-12 d-flex align-items-center">
+                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
+                                <i class="bi-box"></i>
+                                <span>
+                                    GRIT DAY 1
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        
+        <style>
+            body { 
+                font-family: 'Orbitron', sans-serif;
+                margin: 0; 
+                padding: 0; 
+                background: black;
+                color: gold;
+                overflow: hidden;
+            }
+            .expandable-section { margin-bottom: 20px; }
+            .section-content {
+                display: none;
+                padding: 10px;
+                border: 1px solid rgb(242, 232, 232);
+                border-radius: 5px;
+                background: rgba(12, 11, 11, 0.914);
+            }
+            button { 
+                background: rgba(247, 245, 236, 0.646); 
+                color: black; 
+                border: none; 
+                padding: 10px 20px; 
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+                width: 200px;
+                text-align: center;
+                transition: background 0.3s;
+            }
+            button:hover { background: gold; }
+        </style>
+        
+        <main>
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mx-auto text-center">
+                            <h2 class="text-white mt-2 mb-4 pb-2">Operation DELTA NOVEMBER</h2>
+                            <div class="expandable-section">
+                                <button onclick="toggleSection('intelligence')">Intelligence Report</button>
+                                <div id="intelligence" class="section-content">
+                                    <p>The nation of <strong>Libertas</strong> faces hybrid warfare from <strong>Orion</strong>...</p>
+                                    <a href="intelligence_report.html" class="btn btn-outline-light">View Report</a>
+                                </div>
+                            </div>
+                            <div class="expandable-section">
+                                <button onclick="toggleSection('phase1')">Phase 1</button>
+                                <div id="phase1" class="section-content">
+                                    <p>Establish situational awareness and coordinate force deployment...</p>
+                                    <a href="phase1.html" class="btn btn-outline-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="expandable-section">
+                                <button onclick="toggleSection('phase2')">Phase 2</button>
+                                <div id="phase2" class="section-content">
+                                    <p>Detect and deter hostile space-based threats...</p>
+                                    <a href="phase2.html" class="btn btn-outline-light">View Details</a>
+                                </div>
+                            </div>
+                            <h2 class ="text-white mt-5 mb-1 pb-2">Event Details</h2>
+                                <p class ="text-white mb-0 pb-2"><strong>Date:</strong> April 26, 2025</p>
+                                <p class ="text-white mb-0 pb-2"><strong>Time:</strong> 0630 - 1300</p>
+                                <p class ="text-white mb-0 pb-2"><strong>Location:</strong> Shoup Hall, Moscow ID</p>
+                                <p class ="text-white mb-0 pb-2"><strong>UOD:</strong> OCPs </p>
+                                <p class ="text-white mb-0 pb-2"><strong>Notes:</strong> Bring your own lunch & laptop </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap">
+                    <video autoplay loop muted class="custom-video">
+                        <source src="videos/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </main>
+        <script>
+            function toggleSection(id) {
+                var section = document.getElementById(id);
+                section.style.display = section.style.display === "block" ? "none" : "block";
+            }
+        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
